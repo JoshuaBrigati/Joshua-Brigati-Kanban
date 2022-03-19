@@ -1,4 +1,9 @@
 .main {
   height: calc(100% - 110px);
   display: flex;
+  overflow: auto;
+
+  @media screen and (max-width: 750px) {
+    height: calc(100% - 125px);
+  }
 }

@@ -11,11 +11,13 @@
   justify-content: center;
   padding: 50px;
   border-radius: 10px;
+  min-width: 275px;
 
   .close {
-    position: absolute;
-    top: 15px;
-    right: 20px;
+    margin: 0 0 15px auto;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 16px;
     cursor: pointer;
   }
 
@@ -32,6 +34,11 @@
     &:hover {
       background-color: #6d83f2;
     }
+  }
+
+  @media screen and (max-width: 750px) {
+    padding: 20px;
+    width: auto;
   }
 }
 .add-item-modal {
