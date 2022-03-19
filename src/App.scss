@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+#root {
+  height: 100vh;
+}
+
+.header {
+  position: relative;
+  z-index: 32;
+  display: flex;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.7);
+  background-color: #161b22;
+  align-items: center;
+}
+
+.app {
+  height: 100%;
+  overflow: hidden;
+}
+
+.blur .container>* {
+  filter: blur(5px) brightness(.7);
+  transition: all .25s cubic-bezier(.645,.045,.355,1);
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container {
+  display: flex;
+  flex-shrink: 0;
+  flex: auto;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 25px;
+}
+
+.board-options {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px 0 25px;
+  margin-bottom: 25px;
+
+  .board-name {
+    font-weight: 600;
+    font-size: 24px;
+  }
+}
+
+.board-options-left {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+
+  .add-column, .add-card {
+    margin: 0 15px;
+    padding: 5px 10px;
+    border: 2px solid #6d83f2;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color .5s ease;
+    background-color: transparent;
+    color: white;
+    font-size: inherit;
+    font-weight: 600;
+    font-family: 'Poppins';
+
+    &:hover {
+      background-color: #6d83f2;
+    }
+
+    &:disabled {
+      background-color: #19235d;
+      color: #7d7d7d;
+      cursor: not-allowed;
+      border-color: #47559f;
+    }
+  }
+}

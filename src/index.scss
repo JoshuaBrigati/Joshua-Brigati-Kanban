@@ -1,0 +1,28 @@
+html, body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: radial-gradient(ellipse at bottom,#1b2735 0,#090a0f 100%);
+  height: 100% !important;
+  font-family: Poppins;
+  color: white;
+}
+
+body {
+  display: flex;
+  font-size: 14px;
+  line-height: 1.5;
+  flex-direction: column;
+}
+
+@import './scss/MainInput.scss';
+@import './scss/MainSelect.scss';
+@import './scss/MainTextArea.scss';
+@import './scss/KanbanMain.scss';
+@import './scss/KanbanColumn.scss';
+@import './scss/ItemCard.scss';
+@import './scss/modals.scss';

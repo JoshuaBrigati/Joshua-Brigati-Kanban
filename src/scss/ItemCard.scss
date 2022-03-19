@@ -1,0 +1,56 @@
+.card {
+  padding: 15px;
+  background: rgba(255, 255, 255, .15);
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 3px 4px 1rem 0 rgb(0 0 0 / 32%);
+  border: 1px solid #7d7d7d;
+
+  &:first-child {
+    margin-top: 0px;
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+
+    .archive-button {
+      font-weight: 600;
+      cursor: pointer;
+      height: fit-content;
+      transition: color 0.1s ease;
+
+      &:hover {
+        color:#6d83f2;
+      }
+    }
+  }
+
+  h4 {
+    margin: 0 0 10px 0;
+    font-weight: 600;
+  }
+
+  p {
+    margin: 0;
+    font-size: 13px;
+  }
+
+  .card-info {
+    height: 20px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+  }
+
+  .ticket-number {
+    font-weight: 800;
+  }
+
+  .ticket-size {
+    font-weight: 500;
+    padding: 0px 8px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, .35)
+  }
+}

@@ -1,0 +1,48 @@
+.main-select {
+  margin-bottom: 15px;
+
+  select {
+    background: #37344D 0% 0% no-repeat padding-box;
+    border: none;
+    padding: 20px 70px 20px 20px;
+    border-radius: 16px;
+    -webkit-appearance: none;
+    background-image: linear-gradient(45deg, transparent 50%, #6d83f2 50%), linear-gradient(135deg, #6d83f2 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 20px) calc(1.75em + 2px), calc(100% - 15px) calc(1.75em + 2px), calc(100% - 2.5em) 1em;
+    background-size: 5px 5px, 5px 5px, 1px 2em;
+    background-repeat: no-repeat;
+    font: normal normal 600 16px/24px Poppins;
+    letter-spacing: 0.75px;
+    color: #FCFCFC;
+    width: 100%;
+    box-shadow: 0px 0px 5px 0px #6c82f0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    &:focus {
+      outline:none;
+    }
+
+    &.error {
+      border: 2px solid #FF75CB;
+      color: #FF75CB;
+    }
+
+    &:focus {
+      // padding: 18px 18px 18px 18px;
+      border: 2px solid #FCFCFC;
+      background-color: #14142B;
+    }
+  }
+
+
+  .main-select-label {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .error-text {
+    margin-left: 10px;
+    color: #FF75CB;
+  }
+}
