@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+## Deployed Demo
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[https://joshua-brigati-kanban.vercel.app/]
 
 ## Available Scripts
 
