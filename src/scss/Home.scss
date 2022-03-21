@@ -1,0 +1,78 @@
+.home {
+  margin: 0px auto;
+  max-width: 800px;
+  padding: 25px;
+  height: 90%;
+
+  @media screen and (min-height: 750px) and (max-width: 750px) {
+    background: radial-gradient(ellipse at bottom, #1b2735 0, #090a0f 100%);
+    height: calc(100% + 75px);
+  }
+
+  .boards {
+    display: flex;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+  }
+
+  a {
+    margin: 20px;
+  }
+
+  .board {
+    padding: 20px;
+    border: 2px solid #6d83f2;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color .5s ease;
+
+    h2 {
+      overflow: hidden;
+      max-width: 75vw;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:hover {
+      background-color: #6d83f2;
+    }
+  }
+
+  .new-board-input {
+    margin-top: 50px;
+    width: 50%;
+
+    @media screen and (max-width: 750px) {
+      width: 100%;
+    }
+  }
+
+  button {
+    padding: 15px 50px;
+    border: 2px solid #6d83f2;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color .5s ease;
+    background-color: transparent;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Poppins';
+
+    &:hover {
+      background-color: #6d83f2;
+    }
+
+    &:disabled {
+      background-color: #19235d;
+      color: #7d7d7d;
+      cursor: not-allowed;
+      border-color: #47559f;
+    }
+  }
+}

@@ -3,7 +3,13 @@ import { MainInput } from '../components/Inputs/MainInput';
 import { MainSelect } from '../components/Inputs/MainSelect';
 import { MainTextArea } from '../components/Inputs/MainTextArea';
 
-const AddOrEditCardModal = ({setShowAddCardModal, addOrEditCard, currentColumns, columnId, cardToEdit, setCardToEdit}) => {
+const AddOrEditCardModal = ({
+  setShowAddCardModal,
+  addOrEditCard,
+  currentColumns,
+  cardToEdit,
+  setCardToEdit
+}) => {
   const isNew = cardToEdit.id ? false : true;
   const {
     register,

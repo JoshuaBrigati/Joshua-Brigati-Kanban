@@ -28,8 +28,13 @@
   }
 
   h4 {
-    margin: 0 0 10px 0;
+    margin: 0 0 15px 0;
     font-weight: 600;
+    max-width: 250px;
+    word-wrap: break-word;
+    white-space: normal;
+    font-size: 18px;
+    letter-spacing: .25px;
   }
 
   p {
@@ -56,6 +61,8 @@
   }
 
   @media screen and (max-width: 750px) {
-
+    h4 {
+      max-width: 200px;
+    }
   }
 }

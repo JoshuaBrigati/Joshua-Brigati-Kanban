@@ -16,8 +16,8 @@ const ItemCard = ({
     <div
       className='card'
       ref={provided.innerRef}
-      {...provided.draggableProps}
-      {...provided.dragHandleProps}
+        {...provided.draggableProps}
+        {...provided.dragHandleProps}
       onClick={(e) => handleEditCard(columnId, cardId, cardIndex, e)}
     >
       <div className='card-header'>

@@ -17,7 +17,7 @@ const AddOrEditColumnModal = ({setShowAddColumnModal, addOrEditColumn, columnToE
     }
   });
   const onSubmit = handleSubmit(({ columnName, columnDescription }) => {
-    addOrEditColumn(columnToEdit.columnId, columnName, columnDescription, isNew, columnToEdit.columnIndex);
+    addOrEditColumn(columnToEdit.columnId, columnName, columnDescription, isNew);
   });
 
   const columnName = register('columnName', { required: true });

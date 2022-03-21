@@ -1,6 +1,3 @@
-import React from 'react';
-
-
 export const MainInput = ({
   inputValue,
   inputType,
@@ -11,7 +8,8 @@ export const MainInput = ({
   errorType,
   errorTextOveride,
   onBlur,
-  autoFocus
+  autoFocus,
+  placeHolder
 }) => {
   const getErrorText = () => {
     if (errorType === 'required') {
@@ -35,6 +33,7 @@ export const MainInput = ({
         onChange={(e) => onChange(e)}
         onBlur={onBlur ? (e) => onBlur(e) : () => {}}
         autoFocus={autoFocus}
+        placeholder={placeHolder}
       />
       <div className={'error-text'}>{errorTextOveride ? errorTextOveride : getErrorText()}</div>
     </div>

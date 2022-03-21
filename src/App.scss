@@ -4,30 +4,14 @@
   height: 100vh;
 }
 
-.header {
-  position: relative;
-  z-index: 32;
-  display: flex;
-  padding: 16px;
-  font-size: 14px;
-  line-height: 1.5;
-  color: rgba(255,255,255,0.7);
-  background-color: #161b22;
-  align-items: center;
-}
-
 .app {
   height: 100%;
-  overflow: hidden;
 }
 
 .blur .container>* {
   filter: blur(5px) brightness(.7);
   transition: all .25s cubic-bezier(.645,.045,.355,1);
   pointer-events: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
