@@ -10,6 +10,7 @@ import {
 import { reorderColumns, reorderCards } from "../../utils/ColumnDataHelpers";
 import { useParams } from "react-router-dom";
 import Navbar from "../Navs/Navigation";
+import Loading from "../Loading";
 
 const KanbanTopBar = lazy(() => import('./KanbanTopBar'));
 const AddOrEditColumnModal = lazy(() => import('../../modals/AddOrEditColumnModal'));
@@ -197,7 +198,7 @@ const KanbanMain = () => {
     <div className={`kanban-main ${showAddColumnModal || showAddCardModal ? 'blur' : ''} `}>
       <Navbar />
       <div className='container'>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Loading />}>
           <KanbanTopBar
             boardName={boardInfo.name}
             setShowAddColumnModal={setShowAddColumnModal}
@@ -234,7 +235,7 @@ const KanbanMain = () => {
         </DragDropContext>
       </div>
       {showAddColumnModal && (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Loading />}>
           <AddOrEditColumnModal
             setShowAddColumnModal={setShowAddColumnModal}
             addOrEditColumn={addOrEditColumn}
@@ -244,7 +245,7 @@ const KanbanMain = () => {
         </Suspense>
       )}
       {showAddCardModal && (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<Loading />}>
           <AddOrEditCardModal
             setShowAddCardModal={setShowAddCardModal}
             addOrEditCard={addOrEditCard}
